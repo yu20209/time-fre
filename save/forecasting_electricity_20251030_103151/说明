@@ -1,0 +1,11 @@
+
+运行
+python exe_forecasting.py --datatype electricity --nsample 100 --device cuda:0
+如果训练已完成，可直接加载模型评估
+python exe_forecasting.py --datatype electricity --nsample 100 --device cuda:0 --modelfolder forecasting_electricity_20251030_090207
+epoch=100
+结果
+RMSE: 1058.5154704996055
+MAE: 89.898712998713
+CRPS: 0.10420268460323936
+CRPS_sum: 0.08264488922922235
